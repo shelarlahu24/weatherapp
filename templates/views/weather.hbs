@@ -1,0 +1,33 @@
+{{>header}}
+<div class="container-fluid">
+  <div class="row d-flex flex-column justify-content-start align-items-center vh-100">
+    <div class="col-md-4 col-12 my-5">
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control " id="search" placeholder="Enter city name" required>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+          </div>
+        </div>
+        <div id="error" class="invalid-feedback text-danger">
+            Please provide a valid city.
+        </div>
+      </form>
+      <div class="card text-white bg-dark my-5">
+        <div class="card-header d-flex justify-content-between">
+          <span id="today"></span>
+          <span id="dat"></span>
+        </div>
+        <div class="card-body text-center">
+          <div id="status">
+            <i class="fa fa-cloud fa-6x my-2"></i>
+          </div>
+          <h5 id="temp">0&#8451;</h5>
+          <h4 id="city">City</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{>footer}}
+<script src="js/main.js"></script>
